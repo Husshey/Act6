@@ -52,13 +52,7 @@ $router->get('rollback', 'MigrationController::rollback');
 $router->get('rollback-all', 'MigrationController::rollback_all');
 $router->get('refresh', 'MigrationController::refresh');
 $router->get('status', 'MigrationController::status');
-// API Routes
-$router->group(['prefix' => '/api'], function ($router) {
-    $router->post('/register', 'AuthController::register');
-    $router->post('/login',    'AuthController::login');
-    $router->post('/logout',   'AuthController::logout');
-    $router->post('/refresh',  'AuthController::refresh');
-});
+
 // API Routes
 $router->group(['prefix' => '/api'], function ($router) {
     $router->post('/register', 'AuthController::register');
