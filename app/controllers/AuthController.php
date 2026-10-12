@@ -11,7 +11,7 @@ class AuthController extends Controller
         $this->call->library('api');
     }
 
-    public function register()
+    public function create()
     {
         $this->api->require_method('POST');
         $input = $this->api->body();
