@@ -145,7 +145,7 @@ $config['users_table'] = 'users';
 | a browser, so set your real domain in production.
 |
 */
-$config['allow_origin'] = getenv('ALLOWED_ORIGIN') ?: '*';
+$config['allow_origin'] = getenv('ALLOWED_ORIGIN') ?: 'https://act6-react-vue.onrender.com';
 
 /*
 |--------------------------------------------------------------------------
